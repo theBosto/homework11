@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* grid container  */
+.grid_container {
+    width: min(100%, 1440px);
+    margin: auto;
+    display: grid;
+    padding: 32px 20px;
+    gap: 40px 48px;
+    background: #1C5550;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 48px 340px 284px;
+    grid-template-areas:
+        "header header header header"
+        "section article1 article1 article2"
+        "figure1 figure2 figure3 figure4";
+}
+
+/* header  */
+.header {
+    display: flex;
+    grid-area: header;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* site navigation  */
+.header_ul {
+    display: flex;
+    gap: 84px;
+}
+
+.header_a {
+    color: #DFD9D9;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* user side  */
+.user {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    padding: 8px 20px 7px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 1.52px 3px 3px -0.8px rgba(0, 0, 0, 0.20) inset, 0px -0.3px 1px 0px rgba(223, 217, 217, 0.40) inset;
+}
+
+.search p {
+    color: #91B599;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 100px;
+}
+
+.user_icon,
+.shop_icon {
+    padding: 4px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 2px 4px -2px rgba(223, 217, 217, 0.40) inset, 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+/* //header//  */
+
+/* section  */
+.section {
+    padding: 38px 40px;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20) inset, 0px -1px 4px 0px rgba(223, 217, 217, 0.40) inset;
+    grid-area: section;
+}
+
+.section h3 {
+    color: #C3B97F;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 16px;
+}
+
+.section_ul {
+    display: flex;
+    flex-direction: column;
+    column-gap: 5px;
+}
+
+.section_a {
+    color: #91B599;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.chosen_category {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* //section//  */
+
+/* first article  */
+.article1 {
+    grid-area: article1;
+}
+
+.article1_image {
+    background-image: url(../images/article1.png);
+    height: 300px;
+    background-size: auto;
+    background-position: center;
+
+}
+
+.first_article_description {
+    display: flex;
+}
+
+.price {
+    color: #1C5550;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    background-color: white;
+    width: 500px;
+    padding: 8px 20px;
+}
+
+.addButton {
+    color: #DFD9D9;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    width: 180px;
+    background: #C3B97F;
+    border: none;
+
+}
+
+/* //first article//  */
+
+/* second article  */
+.article2 {
+    grid-area: article2;
+}
+
+.article2_image1 {
+    margin-bottom: 48px;
+}
+
+/* //second article//  */
+
+/* figure1  */
+
+figure p {
+    color: #DFD9D9;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-block: 8px;
+}
+
+.figure_description {
+    display: flex;
+
+}
+
+.price2 {
+    color: #1C5550;
+    background-color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    width: 223px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.addButton2 {
+    color: #DFD9D9;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    background: #C3B97F;
+    padding: 9px 8px 9px 10px;
+    border: none;
+}
+
+.figure1 {
+    grid-area: figure1;
+}
+
+.figure2 {
+    grid-area: figure2;
+}
+
+.figure3 {
+    grid-area: figure3;
+}
+
+.figure4 {
+    grid-area: figure4;
+}
